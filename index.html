@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        li{color: brown;}
+    </style>
+
+
+    
+</head>
+<body>
+    <header>
+        <h1>welcome dom</h1>
+        <main>
+            <h1>awesom dom</h1>
+            <ul>
+                
+            <li>lawon</li>
+            <li>shawon</li>
+            <li>bhawon</li>
+            <li>khawon</li>
+        
+        </ul>
+        </main>
+    </header>
+    
+</body>
+
+<script src="./js/dom.js"></script>
+<script>
+    // const student = {
+    //     name:'sawon',
+    //     ID:11,
+    //     study:function(time){
+    //         console.log(time,'studying')
+    //     }
+
+    // }
+    // console.log('adding js inside the html file')
+
+    const liCollection = document.getElementsByTagName('li');
+    // console.log(liCollection);
+    for(const li of liCollection){
+        // console.log(li); 
+        console.log(li.innerText)
+    }
+
+    const allHeadings = document.getElementsByTagName('h1') 
+    for(const h1 of allHeadings){
+        console.log(h1);
+    }
+    
+</script>
+</html>
